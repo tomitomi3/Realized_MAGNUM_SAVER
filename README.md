@@ -53,6 +53,20 @@ IoTなミニ四駆を実現する構成とする。音声認識を行う部分�
 * [MiniNWDCtrl](https://github.com/tomitomi3/Realized_MAGNUM_SAVER/tree/main/MiniNWDCtrl)
   * 受信したデータに基づきG26をPWM制御
 
+#### 指定IPアドレスに指定文字列をUDPで送信するスクリプト
+
+* [sendUDPpacket.ps1](https://github.com/tomitomi3/Realized_MAGNUM_SAVER/tree/main/testscript)
+
+コマンドプロンプトで下記powershellスクリプトを実行する。
+
+```
+> powershell .\sendUDPpacket.ps1 IPアドレス 文字
+```
+
+```
+> powershell .\sendUDPpacket.ps1 192.168.1.1 1
+```
+
 ## 今後
 * 加速度・角速度センサーを用いたコーナリング時の加減速
 * MCU、モーター制御部をコンパクト
